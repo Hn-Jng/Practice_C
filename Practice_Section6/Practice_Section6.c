@@ -8,9 +8,9 @@ int main()
 
 	printf("Enter an integer (q to quit) :");
 
-	status = scanf("%d", &num);
+	status = scanf("%d", &num);   // scanf() return value를 while 들어가는 조건문으로 넣어서 status변수 생략가능
 
-	while (status == 1)
+	while (status == 1)   // equality operator 
 	{
 		sum = sum + num;
 		printf("Enter next integer (q to quit) : ");
