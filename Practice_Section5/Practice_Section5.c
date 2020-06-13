@@ -9,13 +9,14 @@
 //	while(n<11)          // 조건
 //	{
 //		printf("%d", n);
-//		m = ++n;       // 변화하는 조건
+//		m = n++;       // 변화하는 조건
 //		printf("\t%d\n", m);
 //	}
 //
 //	return 0;
 //}
 
+/*예제_복리계산*/
 //int main()
 //{
 //	float seed_money, target_money, annual_interest;
@@ -126,7 +127,7 @@
 //{
 //	while (--n > 0)
 //	{
-//		printf("*,%d",n);
+//		printf("*%d",n);
 //	}
 //		printf("\n");
 //	

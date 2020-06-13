@@ -7,17 +7,17 @@
 #include <inttypes.h>
 #include <stdlib.h>
 
-int main()
-{
-	char fruit_name[10];
-	printf("What is your favorate fruit?\n");
-	scanf("%s", fruit_name);   // Banan 입력
-	printf("You like %s!\n", fruit_name); // 배열 사용하지 않으면 B만 출력
-	                                      // Char는 문자하나만 표현가능해서 뒤의 문자는 잘리게됨
-	// 배열 사용시 그 자체로 주소값 가리키기 때문에 scanf에서 '&'입력안함
-	// %c -> %s(string의미함), 
-	return 0;
-}
+//int main()
+//{
+//	char fruit_name[10];
+//	printf("What is your favorate fruit?\n");
+//	scanf("%s", fruit_name);   // Banan 입력
+//	printf("You like %s!\n", fruit_name); // 배열 사용하지 않으면 B만 출력
+//	                                      // Char는 문자하나만 표현가능해서 뒤의 문자는 잘리게됨
+//	// 배열 사용시 그 자체로 주소값 가리키기 때문에 scanf에서 '&'입력안함
+//	// %c -> %s(string의미함), 
+//	return 0;
+//}
 
 
 
@@ -33,7 +33,7 @@ int main()
 //	char string[10]; // maximally 9 character  +  '/0'(null character) - 마침표역할의 문자
 //	
 //
-//	size_t char_size = sizeof(char);
+//	size_t char_size = sizeof(c);
 //	size_t str_size = sizeof(string);
 //
 //	printf("Size of char type is %zu bytes. \n", char_size);
@@ -76,7 +76,7 @@ int main()
 //{
 //	float radius, area, circum;
 //
-//	printf("Input radius\n");
+//	printf("Input radius\n:");
 //	scanf("%f", &radius);
 //
 //	area = PI * radius * radius;                 //area = pi*r*r
@@ -148,15 +148,15 @@ int main()
 //
 //}
 
-//int main()
-//{
+int main()
+{
 
 	//int i;
 	//float f;          //double 입력받을 때는 lf
 	//char str[30];
 	//scanf("%d %f %s", &i, &f, str);
 	//printf("%d %f %s", i, f, str);    ////f는 소수점 밑 6자리, s는 띄어쓰기 뒤로는 출력안됨
-	
+	//
 	//char c;
 	//scanf("%c", &c);          // 문자 입력 받을 시, 빈칸도 문자로 인식
 	//printf("%c\n", c);
@@ -170,23 +170,23 @@ int main()
 	//                                //선언한 type에 맞게 형식자? 사용하여야 함
 	//printf("%.20f\n", d);
 
-	/*char i = 0;
-	scanf("%hhd", &i);
-	printf("%i\n", i);*/
+	//char i = 0;
+	//scanf("%hhd", &i);
+	//printf("%i\n", i);
 
 	//int a;                   // 1123aaa -> 1123 으로 출력
 	//scanf("%i", &a);
 	//printf("%i", a);
 
-	/*intmax_t i;
-	scanf("%ji", &i);
-	printf("%ji\n", i);*/
+	//intmax_t i;
+	//scanf("%jd", &i);
+	//printf("%jd\n", i);
 
 	//int a, b;
 	//scanf("%d , %d", &a, &b);      // ,붙이면 띄어쓰기대신 ,으로 구분.  쉼표앞에 띄어쓰기 유무에 따른 출력 유의할 것
 	//printf("%d %d\n", a, b);
 
-	///*scanf()의 ruturn*/	            // scanf로 몇개를 입력 받았는지 출력
+	/*scanf()의 ruturn*/	            // scanf로 몇개를 입력 받았는지 출력
 	//int a, b;
 	//int i = scanf("%d%d", &a, &b);
 	//printf("%d", i);
@@ -201,8 +201,8 @@ int main()
 	//int o, p = 10;
 	//scanf("%*d%*d%d", &i,&o,&p);          // scanf에서 %*d 값은 무시됨.  
 	//                                      // 1,2번째 값 저장이 안되기 때문에 입력받은 세번째 값이 &i로 처음으로 저장, &o,&p는 
-	//printf("your third input = %d", p);   // o,p는 초기화 한 경우 초기화값, 아닌 경우 쓰레기값 출력
+	//printf("your third input = %d", i);   // o,p는 초기화 한 경우 초기화값, 아닌 경우 쓰레기값 출력
 
 
 	//return 0;
-//}
+}
