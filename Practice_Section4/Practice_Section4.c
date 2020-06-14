@@ -20,8 +20,6 @@
 //}
 
 
-
-
 //struct Mystruct
 //{
 //	int i;
@@ -130,6 +128,22 @@
 //
 //}
 
+ /*_Bool 자료형*/
+//int main()
+//{
+//	_Bool boolean_true = (2 > 1);
+//	_Bool boolean_false = (1 > 2);
+//
+//	printf("True is %d\n", boolean_true);
+//	printf("False is %d\n", boolean_false);
+//
+//	printf(boolean_true ? "true" : "true");
+//	printf("\n");
+//	printf(boolean_false ? "true" : "false");
+//
+//	return 0;
+//}
+
 //int main()
 //{
 //	float n1 = 3.14;     // 4 bytes
@@ -148,61 +162,61 @@
 //
 //}
 
-int main()
-{
-
-	//int i;
-	//float f;          //double 입력받을 때는 lf
-	//char str[30];
-	//scanf("%d %f %s", &i, &f, str);
-	//printf("%d %f %s", i, f, str);    ////f는 소수점 밑 6자리, s는 띄어쓰기 뒤로는 출력안됨
-	//
-	//char c;
-	//scanf("%c", &c);          // 문자 입력 받을 시, 빈칸도 문자로 인식
-	//printf("%c\n", c);
-
-	//unsigned i;               // 받을 때 signed로 받아 unsigned 메모리에 저장했다가, 다시 signed로 꺼내기때문에 출력은 이상없이 됨.
-	//scanf("%i", &i);
-	//printf("%i\n", i);
-
-	//double d = 0;
-	//scanf("%lf", &d);               //double 입력받을 때는 lf , double 선언하고 f로 받으면 size가 안맞아 출력오류
-	//                                //선언한 type에 맞게 형식자? 사용하여야 함
-	//printf("%.20f\n", d);
-
-	//char i = 0;
-	//scanf("%hhd", &i);
-	//printf("%i\n", i);
-
-	//int a;                   // 1123aaa -> 1123 으로 출력
-	//scanf("%i", &a);
-	//printf("%i", a);
-
-	//intmax_t i;
-	//scanf("%jd", &i);
-	//printf("%jd\n", i);
-
-	//int a, b;
-	//scanf("%d , %d", &a, &b);      // ,붙이면 띄어쓰기대신 ,으로 구분.  쉼표앞에 띄어쓰기 유무에 따른 출력 유의할 것
-	//printf("%d %d\n", a, b);
-
-	/*scanf()의 ruturn*/	            // scanf로 몇개를 입력 받았는지 출력
-	//int a, b;
-	//int i = scanf("%d%d", &a, &b);
-	//printf("%d", i);
-
-	//int i = 12345;   
-	//int width = 0;  
-	//printf("Input width :");
-	//scanf("%d", &width);      // 입력한만큼의 문자열 출력, 입력값보다 문자열이 작을경우 앞에 여백들어감
-	//printf("%*d\n", width, i); 
-
-	//int i;
-	//int o, p = 10;
-	//scanf("%*d%*d%d", &i,&o,&p);          // scanf에서 %*d 값은 무시됨.  
-	//                                      // 1,2번째 값 저장이 안되기 때문에 입력받은 세번째 값이 &i로 처음으로 저장, &o,&p는 
-	//printf("your third input = %d", i);   // o,p는 초기화 한 경우 초기화값, 아닌 경우 쓰레기값 출력
-
-
-	//return 0;
-}
+//int main()
+//{
+//
+//	//int i;
+//	//float f;          //double 입력받을 때는 lf
+//	//char str[30];
+//	//scanf("%d %f %s", &i, &f, str);
+//	//printf("%d %f %s", i, f, str);    ////f는 소수점 밑 6자리, s는 띄어쓰기 뒤로는 출력안됨
+//	//
+//	//char c;
+//	//scanf("%c", &c);          // 문자 입력 받을 시, 빈칸도 문자로 인식
+//	//printf("%c\n", c);
+//
+//	//unsigned i;               // 받을 때 signed로 받아 unsigned 메모리에 저장했다가, 다시 signed로 꺼내기때문에 출력은 이상없이 됨.
+//	//scanf("%i", &i);
+//	//printf("%i\n", i);
+//
+//	//double d = 0;
+//	//scanf("%lf", &d);               //double 입력받을 때는 lf , double 선언하고 f로 받으면 size가 안맞아 출력오류
+//	//                                //선언한 type에 맞게 형식자? 사용하여야 함
+//	//printf("%.20f\n", d);
+//
+//	//char i = 0;
+//	//scanf("%hhd", &i);
+//	//printf("%i\n", i);
+//
+//	//int a;                   // 1123aaa -> 1123 으로 출력
+//	//scanf("%i", &a);
+//	//printf("%i", a);
+//
+//	//intmax_t i;
+//	//scanf("%jd", &i);
+//	//printf("%jd\n", i);
+//
+//	//int a, b;
+//	//scanf("%d , %d", &a, &b);      // ,붙이면 띄어쓰기대신 ,으로 구분.  쉼표앞에 띄어쓰기 유무에 따른 출력 유의할 것
+//	//printf("%d %d\n", a, b);
+//
+//	/*scanf()의 ruturn*/	            // scanf로 몇개를 입력 받았는지 출력
+//	//int a, b;
+//	//int i = scanf("%d%d", &a, &b);
+//	//printf("%d", i);
+//
+//	//int i = 12345;   
+//	//int width = 0;  
+//	//printf("Input width :");
+//	//scanf("%d", &width);      // 입력한만큼의 문자열 출력, 입력값보다 문자열이 작을경우 앞에 여백들어감
+//	//printf("%*d\n", width, i); 
+//
+//	//int i;
+//	//int o, p = 10;
+//	//scanf("%*d%*d%d", &i,&o,&p);          // scanf에서 %*d 값은 무시됨.  
+//	//                                      // 1,2번째 값 저장이 안되기 때문에 입력받은 세번째 값이 &i로 처음으로 저장, &o,&p는 
+//	//printf("your third input = %d", i);   // o,p는 초기화 한 경우 초기화값, 아닌 경우 쓰레기값 출력
+//
+//
+//	//return 0;
+//}
