@@ -144,6 +144,28 @@
 //	return 0;
 //}
 
+/*자료형 변환(Type Conversions)*/
+//int main()
+//{
+//	float f = 3.14f;    // 큰 메모리 size에 작은것을 넣기 때문에 문제없음
+//	double d = f;
+//	int i;
+//
+//	d = 1.25;
+//	f = 1.25;
+//	//f = 1.123f;          // demotion in assignments. f붙여야함, float과 double에서 인식하는 값의 차이가 있음
+//	d = f + 1.234;
+//	f = f + 1.234;        // float에 double 더하면 double형태가 되기 때문에 float메모리에 담으면 손실 경고 뜸
+//
+//	/*casting operators(의도적으로 형변환)*/
+//	
+//	d = (double)3.14f;
+//	i = 1.6 + 1.7;  //3
+//	i = (int)1.6 + (int)1.7;   //2
+//	return 0;
+//
+//}
+
 //int main()
 //{
 //	float n1 = 3.14;     // 4 bytes
