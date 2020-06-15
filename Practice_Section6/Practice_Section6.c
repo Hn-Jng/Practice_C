@@ -1,88 +1,8 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <string.h>
-
-//int main()
-//{
-//	int i = 1;
-//	while (i < 5)          //  iteration : 무한,유한한 반복
-//	{
-//		printf("i before =%d\n", i);
-//		i+=1;
-//		printf("i after = %d\n", i);
-//		
-//	}
-//	return 0;
-//}
-
-//int main()
-//{
-//	int i = 0;
-//	while (i < 5)
-//	                          //  {} 뺴면 무한루프
-//		printf("%i\n",i);
-//		i++;                    
-//	
-//	return 0;
-//}
 
 
-//int main()
-//{
-//	int num, sum = 0;
-//	int status;
-//
-//	printf("Enter an integer (q to quit) :");
-//
-//	status = scanf("%d", &num);   // scanf() return value를 while 들어가는 조건문으로 넣어서 status변수 생략가능
-//
-//	while (status == 1)   // equality operator 
-//	{
-//		sum = sum + num;
-//		printf("Enter next integer (q to quit) : ");
-//	
-//		status = scanf("%d", &num);
-//	
-//	}
-//
-//	printf("Sum : %d", sum);
-//
-//	return 0;
-//}
-
-/* do while문 */
-//int main()
-//{
-//	int passwd = 407;
-//	int guess = 0;
-//
-//	//printf("Enter secret code : ");
-//	//scanf( "%d", &guess);
-//
-//	//while (passwd != guess)
-//	//{
-//	//	printf("Enter secret code : ");
-//	//	scanf("%d", &guess);
-//	//	
-//	//}
-//	//printf("Good!");
-//
-//	////  위의 식과 결과 같음 ////
-//	do
-//	{
-//		printf("Enter secret code : ");
-//		scanf("%d", &guess);
-//	} 
-//	while (passwd != guess);
-//	
-//	printf("Good!!");
-//	
-//
-//	return 0;
-//}
-
-
-/*For문*/
+//////////////////////*For문*////////////////////////
 
 //기본구조
 //int main()
@@ -132,33 +52,113 @@
 //	return 0;
 //}
 
-
-int main()
-{
-	const char first_char = 'A';    // #define 해도 상관없음
-	const char last_char = 'G';
-	
-	scanf("%c", &last_char);
-
-	int num_rows = last_char - first_char + 1;
-	int r;
-	int c;
-
-	for (r = 0; r < num_rows; ++r)
-	{
-		for (c = first_char+r; c <= last_char ; ++c)
-			printf("%c ", c);
-		printf("\n");
-	}
-
-		return 0;
-}
-
-//void Alphabet(void)
+/* For문 예제_중첩 */
+//int main()
 //{
-//	char a = 0;
-//	for (a = 'A'; a < 'L'; a++)
+//	const char first_char = 'A';    // #define 해도 상관없음
+//	const char last_char = 'G';
+//	
+//	scanf("%c", &last_char);
+//
+//	int num_rows = last_char - first_char + 1;
+//	int r;
+//	int c;
+//
+//	for (r = 0; r < num_rows; ++r)
 //	{
-//		printf("%c ", a);
+//		for (c = first_char+r; c <= last_char ; ++c)
+//			printf("%c ", c);
+//		printf("\n");
 //	}
+//
+//		return 0;
+//}
+
+/* For문_배열 */
+////기본구조////
+
+//#define SIZE 5
+
+//int main()
+//{
+//	int my_arr[SIZE];
+//
+//	for (int i = 0; i < SIZE; i++)
+//		my_arr[i] = i;
+//		
+//	for (int i = 0; i < SIZE; i++)
+//		printf("%d ", my_arr[i]);
+//		
+//	return 0;
+//}
+
+/* For문 배열 예제 _ 원하는 만큼 숫자받아 더하기 */
+
+////내가 푼것//
+//int main()
+//{
+//	int num_arr[SIZE];
+//	int num, sum = 0;
+//
+//	printf("Enter %d numbers : ", SIZE);
+//	
+//	for (int i = 0; i < SIZE; i++)
+//	{
+//		scanf("%d", &num_arr[i]);
+//		num = num_arr[i];
+//		sum = sum + num;
+//	}
+//	
+//	printf("Sum = %d\n", sum);
+//	return 0;
+//}
+//
+////강의 해설
+////for문 분할하는 것이 많은 데이터를 다루는 최근 컴퓨팅 환경에 더 효율적인 경우 있음
+//int main()
+//{
+//	int num_arr[SIZE];
+//	int sum = 0;
+//	int i;
+//
+//	printf("Enter %d numbers : ", SIZE);
+//
+//	for (i = 0; i < SIZE; i++)
+//		scanf("%d", &num_arr[i]);
+//
+//	for (i = 0; i < SIZE; i++)
+//		sum += num_arr[i];
+//
+//	printf("Sum = %d\n", sum);
+//
+//	return 0;
+//}
+
+/*예제_ x의 y제곱값 구하기(반복)*/
+
+//int compute_pow(int base, int exp);
+//
+//int main()
+//{
+//	int base, exp, result;
+//		
+//	while (scanf("%d %d", &base, &exp) == 2)
+//	{
+//		result = compute_pow(base, exp);
+//
+//		printf("Result : %d\n", result);
+//	}
+//
+//	return 0;
+//}
+//
+//int compute_pow(int base, int exp) //  linking 과정에서 연결
+//{
+//	int i, result; // main과 별도로 선언해줘야 함
+//
+//	result = 1;
+//	for (i = 0; i < exp; i++)
+//		result *= base;
+//
+//	return result;
 //}
