@@ -2,6 +2,21 @@
 
 #include <stdio.h>
 
+//////////////////* While문 */////////////////////
+
+//int main()
+//{
+//	int i = 1;
+//	while (i < 5)          / 
+//	{
+//		printf("i before =%d\n", i);
+//		i+=1;
+//		printf("i after = %d\n", i);
+//		
+//	}
+//	return 0;
+//}
+
 //int main()
 //{
 //	int n=0;
@@ -16,7 +31,73 @@
 //	return 0;
 //}
 
-/*예제_복리계산*/
+//int main()
+//{
+//	int i = 0;
+//	while (i < 5)
+//	                          //  {} 뺴면 무한루프
+//		printf("%i\n",i);
+//		i++;                    
+//	
+//	return 0;
+//}
+
+/*while예제_scanf() return값 활용한 조건 */
+//int main()
+//{
+//	int num, sum = 0;
+//	int status;
+//
+//	printf("Enter an integer (q to quit) :");
+//
+//	status = scanf("%d", &num);   // scanf() return value를 while 들어가는 조건문으로 넣어서 status변수 생략가능
+//
+//	while (status == 1)   // equality operator 
+//	{
+//		sum = sum + num;
+//		printf("Enter next integer (q to quit) : ");
+//	
+//		status = scanf("%d", &num);
+//	
+//	}
+//
+//	printf("Sum : %d", sum);
+//
+//	return 0;
+//}
+
+/* do while문 */
+//int main()
+//{
+//	int passwd = 407;
+//	int guess = 0;
+//
+//	//printf("Enter secret code : ");
+//	//scanf( "%d", &guess);
+//
+//	//while (passwd != guess)
+//	//{
+//	//	printf("Enter secret code : ");
+//	//	scanf("%d", &guess);
+//	//	
+//	//}
+//	//printf("Good!");
+//
+//	////  위의 식과 결과 같음 ////
+//	do
+//	{
+//		printf("Enter secret code : ");
+//		scanf("%d", &guess);
+//	} 
+//	while (passwd != guess);
+//	
+//	printf("Good!!");
+//	
+//
+//	return 0;
+//}
+
+/* 예제_복리계산 */
 //int main()
 //{
 //	float seed_money, target_money, annual_interest;
@@ -47,6 +128,7 @@
 //	return 0;
 //}
 
+/* 예제_ 초 입력 -> 시간,분,초 변환 */
 //int main()
 //{
 //	int seconds = 0, minutes = 0, hours = 0;
@@ -74,40 +156,7 @@
 //	return 0;
 //}
 
-//int main()
-//{
-//	int x = 0;
-//
-//	while (x < 10)
-//	{
-//		x++;
-//		printf("%d", x);
-//	}
-//	return 0;
-//}
-
-/*자료형 변환(Type Conversions)*/
-//int main()
-//{
-//	float f = 3.14f;    // 큰 메모리 size에 작은것을 넣기 때문에 문제없음
-//	double d = f;
-//	int i;
-//
-//	d = 1.25;
-//	f = 1.25;
-//	//f = 1.123f;          // demotion in assignments. f붙여야함, float과 double에서 인식하는 값의 차이가 있음
-//	d = f + 1.234;
-//	f = f + 1.234;        // float에 double 더하면 double형태가 되기 때문에 float메모리에 담으면 손실 경고 뜸
-//
-//	/*casting operators(의도적으로 형변환)*/
-//	
-//	d = (double)3.14f;
-//	i = 1.6 + 1.7;  //3
-//	i = (int)1.6 + (int)1.7;   //2
-//	return 0;
-//
-//}
-
+/* 예제 */
 //void draw(int n);    //ANSI function prototype declaration
 //
 //int main()
