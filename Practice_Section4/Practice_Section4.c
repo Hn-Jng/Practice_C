@@ -81,7 +81,7 @@
 //	circum = 2.0f * PI * radius;                  //circumference = 2*pi*r
 //
 //	printf("Area is %f\n", area);
-//	printf("Circumrerence is %f\n", circum);
+//	printf("Circumference is %f\n", circum);
 //
 //	return 0;
 //}
@@ -128,7 +128,7 @@
 //
 //}
 
- /*_Bool 자료형*/
+///*_Bool 자료형*/
 //int main()
 //{
 //	_Bool boolean_true = (2 > 1);
@@ -137,14 +137,14 @@
 //	printf("True is %d\n", boolean_true);
 //	printf("False is %d\n", boolean_false);
 //
-//	printf(boolean_true ? "true" : "true");
+//	printf(boolean_true ? "true" : "false");
 //	printf("\n");
 //	printf(boolean_false ? "true" : "false");
 //
 //	return 0;
 //}
 
-/*자료형 변환(Type Conversions)*/
+///*자료형 변환(Type Conversions)*/
 //int main()
 //{
 //	float f = 3.14f;    // 큰 메모리 size에 작은것을 넣기 때문에 문제없음
@@ -172,13 +172,13 @@
 //	double n2 = 1.234;   // 8 bytes
 //	int n3 = 1024;       // 4 bytes
 //
-//	printf("%f %f %d\n\n", n1, n2, n3);
+//	printf("%zu %zu %zu\n\n", sizeof(n1), sizeof(n2), sizeof(n3));
 //
-//	printf("%d %d %d\n\n", n1, n2, n3);
-//	printf("%lld %lld %d\n\n", n1, n2, n3);  // lld : data size는 맞지만, type이 맞지않아 이상한 값 나옴
-//	printf("%f %d %d\n\n", n1, n2, n3);
-//	printf("%f %lld %d\n\n", n1, n2, n3);
-//
+//	printf("%f %lf %d\n", n1, n2, n3);
+//	printf("%d %d %d\n", n1, n2, n3);
+//	printf("%lld %lld %d\n", n1, n2, n3);  // lld : data size는 맞지만, type이 맞지않아 이상한 값 나옴
+//	printf("%f %d %d\n", n1, n2, n3);
+//	printf("%f %lld %d\n", n1, n2, n3);
 //
 //	return 0;
 //
@@ -186,17 +186,7 @@
 
 //int main()
 //{
-//
-//	//int i;
-//	//float f;          //double 입력받을 때는 lf
-//	//char str[30];
-//	//scanf("%d %f %s", &i, &f, str);
-//	//printf("%d %f %s", i, f, str);    ////f는 소수점 밑 6자리, s는 띄어쓰기 뒤로는 출력안됨
-//	//
-//	//char c;
-//	//scanf("%c", &c);          // 문자 입력 받을 시, 빈칸도 문자로 인식
-//	//printf("%c\n", c);
-//
+//	
 //	//unsigned i;               // 받을 때 signed로 받아 unsigned 메모리에 저장했다가, 다시 signed로 꺼내기때문에 출력은 이상없이 됨.
 //	//scanf("%i", &i);
 //	//printf("%i\n", i);
@@ -207,7 +197,7 @@
 //	//printf("%.20f\n", d);
 //
 //	//char i = 0;
-//	//scanf("%hhd", &i);
+//	//scanf("%hhd", &i);         // 문자 입력하면, 0으로 print됨
 //	//printf("%i\n", i);
 //
 //	//int a;                   // 1123aaa -> 1123 으로 출력
@@ -222,7 +212,7 @@
 //	//scanf("%d , %d", &a, &b);      // ,붙이면 띄어쓰기대신 ,으로 구분.  쉼표앞에 띄어쓰기 유무에 따른 출력 유의할 것
 //	//printf("%d %d\n", a, b);
 //
-//	/*scanf()의 ruturn*/	            // scanf로 몇개를 입력 받았는지 출력
+//	///*scanf()의 ruturn*/	            // scanf로 몇개를 입력 받았는지 출력
 //	//int a, b;
 //	//int i = scanf("%d%d", &a, &b);
 //	//printf("%d", i);
@@ -230,7 +220,7 @@
 //	//int i = 12345;   
 //	//int width = 0;  
 //	//printf("Input width :");
-//	//scanf("%d", &width);      // 입력한만큼의 문자열 출력, 입력값보다 문자열이 작을경우 앞에 여백들어감
+//	//scanf("%d", &width);      
 //	//printf("%*d\n", width, i); 
 //
 //	//int i;
@@ -240,5 +230,5 @@
 //	//printf("your third input = %d", i);   // o,p는 초기화 한 경우 초기화값, 아닌 경우 쓰레기값 출력
 //
 //
-//	//return 0;
+//	return 0;
 //}

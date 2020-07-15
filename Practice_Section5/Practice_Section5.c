@@ -24,7 +24,7 @@
 //	while(n<11)          // 조건
 //	{
 //		printf("%d", n);
-//		m = n++;       // 변화하는 조건
+//		m = ++n;       // 변화하는 조건
 //		printf("\t%d\n", m);
 //	}
 //
@@ -35,8 +35,7 @@
 //{
 //	int i = 0;
 //	while (i < 5)
-//	                          //  {} 뺴면 무한루프
-//		printf("%i\n",i);
+//		printf("%i\n", i);        //  {} 뺴면 무한루프
 //		i++;                    
 //	
 //	return 0;
@@ -48,7 +47,7 @@
 //	int num, sum = 0;
 //	int status;
 //
-//	printf("Enter an integer (q to quit) :");
+//	printf("Enter an integer (q to quit) : ");
 //
 //	status = scanf("%d", &num);   // scanf() return value를 while 들어가는 조건문으로 넣어서 status변수 생략가능
 //
@@ -69,19 +68,18 @@
 /* do while문 */
 //int main()
 //{
-//	int passwd = 407;
-//	int guess = 0;
+//	const int secret_code = 337;
+//	int guess = 0.0;
 //
-//	//printf("Enter secret code : ");
-//	//scanf( "%d", &guess);
+//	printf("Enter the secret code: ");
+//	scanf("%d", &guess);
 //
-//	//while (passwd != guess)
-//	//{
-//	//	printf("Enter secret code : ");
-//	//	scanf("%d", &guess);
-//	//	
-//	//}
-//	//printf("Good!");
+//	while (guess != 337)
+//	{
+//		printf("Enter the secret code: ");
+//		scanf("%d", &guess);
+//	}
+//	printf("Welcome, Hnjng \n");
 //
 //	////  위의 식과 결과 같음 ////
 //	do
@@ -89,7 +87,7 @@
 //		printf("Enter secret code : ");
 //		scanf("%d", &guess);
 //	} 
-//	while (passwd != guess);
+//	while (secret_code != guess);
 //	
 //	printf("Good!!");
 //	
@@ -115,12 +113,10 @@
 //	int year_count=0;
 //	while (fund < target_money)
 //	{
-//		
 //		fund = fund + fund * annual_interest/100;  // fund += fund * (annual_interest/100 와 같음
 //		year_count = year_count + 1;                   // year_count += 1;  ,  year_count++;  와 같음
 //
 //		printf("Year count :%d \t fund : %.1f(원)\n", year_count, fund);
-//
 //	}
 //
 //	printf("It takes %d years\n", year_count);

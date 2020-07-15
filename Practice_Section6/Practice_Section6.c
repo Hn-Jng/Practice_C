@@ -5,31 +5,31 @@
 //////////////////////*For문*////////////////////////
 
 //기본구조
-//int main()
-//{
-//	int i;    // int i; 형태로 for 조건문 안으로 넣을수도 있음
-//	for (i = 1; i <= 10; i++)  //for(initialize; test; update)
-//		printf("%d ", i);
-//	printf("\n");
-//
-//	for (char c = 'A'; c <= 'Z'; c++)
-//		printf("%c ", c);
-//	printf("\n");
-//
-//	for (int x = 1, y = 5; y <= 20; y = (++x * 3) + 10)
-//		printf("%d ", x);
-//	printf("\n");
-//
-//	int n;
-//	n = 2;
-//	for (i = 2; n < 10;)
-//	{
-//		n = n * i;
-//		printf("%d ", n);
-//	}
-//
-//	return 0;
-//}
+int main()
+{
+	int i;    // int i; 형태로 for 조건문 안으로 넣을수도 있음
+	for (i = 1; i < 10; i++)  //for(initialize; test; update)
+		printf("%d ", i);
+	printf("\n");
+
+	for (char c = 'A'; c <= 'Z'; c++)
+		printf("%c ", c);
+	printf("\n");
+
+	for (int x = 1, y = 5; y <= 20; y = (++x * 3) + 10)
+		printf("%d ", x);
+	printf("\n");
+
+	int n;
+	n = 2;
+	for (i = 2; n < 10;)
+	{
+		n = n * i;
+		printf("%d ", n);
+	}
+
+	return 0;
+}
 
 /* for문 예제1*/
 
