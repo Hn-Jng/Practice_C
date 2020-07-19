@@ -5,31 +5,31 @@
 //////////////////////*For문*////////////////////////
 
 //기본구조
-int main()
-{
-	int i;    // int i; 형태로 for 조건문 안으로 넣을수도 있음
-	for (i = 1; i < 10; i++)  //for(initialize; test; update)
-		printf("%d ", i);
-	printf("\n");
-
-	for (char c = 'A'; c <= 'Z'; c++)
-		printf("%c ", c);
-	printf("\n");
-
-	for (int x = 1, y = 5; y <= 20; y = (++x * 3) + 10)
-		printf("%d ", x);
-	printf("\n");
-
-	int n;
-	n = 2;
-	for (i = 2; n < 10;)
-	{
-		n = n * i;
-		printf("%d ", n);
-	}
-
-	return 0;
-}
+//int main()
+//{
+//	int i;                       // int i; 형태로 for 조건문 안으로 넣을수도 있음
+//	for (i = 1; i < 10; i++)     //for(initialize; test; update)
+//		printf("%d ", i);
+//	printf("\n");
+//
+//	for (char c = 'A'; c <= 'Z'; c++)
+//		printf("%c ", c);
+//	printf("\n");
+//
+//	for (int x = 1, y = 5; y <= 20; y = (++x * 3) + 10)
+//		printf("%d ", x);
+//	printf("\n");
+//
+//	int n;
+//	n = 2;
+//	for (i = 2; n < 10;)
+//	{
+//		n = n * i;
+//		printf("%d ", n);
+//	}
+//
+//	return 0;
+//}
 
 /* for문 예제1*/
 
@@ -53,26 +53,22 @@ int main()
 //}
 
 /* For문 예제_중첩 */
-//int main()
-//{
-//	const char first_char = 'A';    // #define 해도 상관없음
-//	const char last_char = 'G';
-//	
-//	scanf("%c", &last_char);
-//
-//	int num_rows = last_char - first_char + 1;
-//	int r;
-//	int c;
-//
-//	for (r = 0; r < num_rows; ++r)
-//	{
-//		for (c = first_char+r; c <= last_char ; ++c)
-//			printf("%c ", c);
-//		printf("\n");
-//	}
-//
-//		return 0;
-//}
+int main()
+{
+	const char start = 'A';
+	const char last = 'K';
+	int r, i;
+
+	for (r = 0; r <= last-start; r++)
+	{
+		for (i = start; i <= start + r; i++)
+		{
+			printf("%c ", i);
+		}
+		printf("\n");
+	}
+		return 0;
+}
 
 /* For문_배열 */
 ////기본구조////
