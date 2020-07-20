@@ -53,36 +53,63 @@
 //}
 
 /* For문 예제_중첩 */
-int main()
-{
-	const char start = 'A';
-	const char last = 'K';
-	int r, i;
+//int main()
+//{
+//	const char start = 'A';
+//	const char last = 'L';
+//	int r, i;
+//
+//	for (r = 0; r <= last-start; r++)
+//	{
+//		for (i = start+r; i <= last; i++)
+//		{
+//			printf("%c ", i);
+//		}
+//		printf("\n");
+//	}
+//		return 0;
+//}
 
-	for (r = 0; r <= last-start; r++)
-	{
-		for (i = start; i <= start + r; i++)
-		{
-			printf("%c ", i);
-		}
-		printf("\n");
-	}
-		return 0;
-}
 
-/* For문_배열 */
-////기본구조////
+/////////////////////////배열//////////////////////////
 
-//#define SIZE 5
+//int main()
+//{
+//	int my_numbers[5];
+//
+//	my_numbers[0] = 1;      // subscrpts, indices, offsets
+//	my_numbers[1] = 3;      // []안의 숫자 : 첫번째 메모리 주소로부터 몇칸 떨어져있는지
+//	my_numbers[2] = 4;
+//	my_numbers[3] = 2;
+//	my_numbers[4] = 1024;
+//
+//	scanf("%d", my_numbers);  // my_numbers는 자체가 메모리 주소를 가리키기 때문에 '&' 붙이지 않으면 my_numbers[0]을 가리킴
+//
+//	printf("%d\n", my_numbers[0]);
+//	printf("%d\n", my_numbers[1]);
+//	printf("%d\n", my_numbers[2]);
+//	printf("%d\n", my_numbers[3]);
+//	printf("%d\n", my_numbers[4]);
+//
+//	  
+//
+//	return 0;
+//}
+
+#define SIZE 5
 
 //int main()
 //{
 //	int my_arr[SIZE];
 //
 //	for (int i = 0; i < SIZE; i++)
-//		my_arr[i] = i;
+//	{
+//		my_arr[i] = i * i;
+//		1 + 2; // dummmy
+//	}
 //		
-//	for (int i = 0; i < SIZE; i++)
+//		
+//	for (int i = 0; i < SIZE; i++)     
 //		printf("%d ", my_arr[i]);
 //		
 //	return 0;
@@ -90,27 +117,6 @@ int main()
 
 /* For문 배열 예제 _ 원하는 만큼 숫자받아 더하기 */
 
-////내가 푼것//
-//int main()
-//{
-//	int num_arr[SIZE];
-//	int num, sum = 0;
-//
-//	printf("Enter %d numbers : ", SIZE);
-//	
-//	for (int i = 0; i < SIZE; i++)
-//	{
-//		scanf("%d", &num_arr[i]);
-//		num = num_arr[i];
-//		sum = sum + num;
-//	}
-//	
-//	printf("Sum = %d\n", sum);
-//	return 0;
-//}
-//
-////강의 해설
-////for문 분할하는 것이 많은 데이터를 다루는 최근 컴퓨팅 환경에 더 효율적인 경우 있음
 //int main()
 //{
 //	int num_arr[SIZE];
@@ -125,7 +131,8 @@ int main()
 //	for (i = 0; i < SIZE; i++)
 //		sum += num_arr[i];
 //
-//	printf("Sum = %d\n", sum);
+//	printf("Sum : %d", sum);
+//	
 //
 //	return 0;
 //}
@@ -137,6 +144,7 @@ int main()
 //int main()
 //{
 //	int base, exp, result;
+//	printf("Enter the base & exponential\n");
 //		
 //	while (scanf("%d %d", &base, &exp) == 2)
 //	{
@@ -158,3 +166,4 @@ int main()
 //
 //	return result;
 //}
+
